@@ -1,0 +1,9 @@
+
+f
+rom sklearn import tree
+X = [[1,2,3],[2,3,4],[3,4,5],[4,5,6]]
+Y = ['true','false','true','false']
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X,Y)
+prediction = clf.predict([[5,6,7]])
+print(prediction)
